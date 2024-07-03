@@ -1,6 +1,6 @@
 /**快速排序 */
 
-import { checkSort } from './check';
+import { checkSort } from './check.js';
 
 /**
  * 将一个数组从low到high的位置
