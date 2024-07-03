@@ -1,4 +1,6 @@
-fetch('/sort/4.quick.js')
+let scriptEl = document.getElementById('main-script');
+let scriptSrc = scriptEl.src;
+fetch(scriptSrc)
   .then((res) => res.text())
   .then((data) => {
     let el = document.createElement('pre');
