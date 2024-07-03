@@ -6,3 +6,4 @@
 5. 归并排序
 6. 希尔排序
 
+![算法动画演示效果图](https://oss.haokur.com/github/sort.gif)
