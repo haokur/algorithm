@@ -104,9 +104,6 @@ class SortDisplay {
           });
         }
       });
-      if (diff.length) {
-        console.log(diff);
-      }
       elChild = prevState
         .map((item, _index) => {
           let matchDiff = diff.find((_diffItem) => _diffItem.index === _index) || '';
