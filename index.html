@@ -5,15 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>索引</title>
+
+    <style>
+        .link-item {
+            margin-bottom: 10px;
+            line-height: 1.4;
+            font-size: 16px;
+        }
+    </style>
 </head>
 
 <body>
-    <div>
-        <a href="/algorithm/sort/1.bubbling.html">1.冒泡排序</a>
-    </div>
-    <div>
-        <a href="/algorithm/sort/4.quick.html">4.快速排序</a>
-    </div>
+    <ul id="link-list"></ul>
+    <script>
+        let linkList = document.getElementById("link-list")
+        let linkConfig = [
+            {
+                name: "冒泡排序",
+                enName: "bubbling"
+            },
+            {
+                name: "选择排序",
+                enName: "select"
+            },
+            {
+                name: "插入排序",
+            },
+            {
+                name: "快速排序",
+                enName: "quick"
+            },
+        ]
+        let linkDom = linkConfig.map((item, index) => {
+            return item.enName ? `<li class="link-item"><a href="/algorithm/sort/${index + 1}.${item.enName}.html">${index + 1}.${item.name}</a></li>` : ''
+        }).join('\n')
+        linkList.innerHTML = linkDom
+    </script>
 </body>
 
 </html>
